@@ -3,7 +3,7 @@
     <text class='{{ header.class }}'> {{ header.content ? header.content : "emtpy" }} </text>
   </view>
   <view wx:else >
-    <text class='{{ header.class }}'> kkk </text>
+    <text class='{{ header.class }}'> branch </text>
   </view>
   <view wx:for='{{ fruits }}' class="item" wx:for-item="fruit" >
     {{ index }}: {{ fruit }}
