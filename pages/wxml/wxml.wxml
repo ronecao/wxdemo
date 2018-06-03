@@ -1,14 +1,22 @@
 <import src='../templates/header.wxml'/>
 <view class='container vertical centered'>
-  <view wx:if = '{{ header.show }}' >
-    <template is='header' data = '{{ ...header }}' />
+  <view 
+   id="header"
+   class="header"
+   style = "color: #6354c9"
+  >
+    <text
+      data-title="views"
+      data-content="content"
+      hiden="{{ false }}"
+      bindtap='tapHandler'
+      id='views'
+      wx:if='{{ true }}'
+    >
+    views
+    </text>
   </view>
-  <view wx:else >
-    <text class='{{ header.class }}'> branch </text>
-  </view>
-  <view wx:for='{{ fruits }}' class="item" wx:for-item="fruit" >
-    {{ index }}: {{ fruit }}
-  </view>
+  <icon type ="info" color="#454575" size="40"/>
 </view>
 <view class="image">
   <image src="../../assets/images/landscape.png"></image>
