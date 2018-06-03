@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/wxml/wxml",
+    "pages/index/index",
+    "pages/event/event"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WXDEMO",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#ededed"
+  },
+  "tabBar": {
+    "color": "rgba(0,0,0,0.6)",
+    "borderStyle": "red",
+    "selectedColor": "#5c5655",
+    "backgroundColor": "#ededed",
+    "list": [
+      {
+        "text": "home",
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-active.png"
+      },
+      {
+        "text": "视图",
+        "pagePath": "pages/wxml/wxml",
+        "iconPath": "assets/icons/web.png",
+        "selectedIconPath": "assets/icons/web-active.png"
+      },
+      {
+        "text": "事件",
+        "pagePath": "pages/event/event",
+        "iconPath": "assets/icons/event.png",
+        "selectedIconPath": "assets/icons/event-active.png"
+      }
+    ]
+  },
+  "debug": true
+}
