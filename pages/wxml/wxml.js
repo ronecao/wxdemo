@@ -8,7 +8,7 @@ Page({
     header :{
       content:'views',
       class:'header',
-      show:false
+      show:true
     },
     fruits:[
       'apple',
