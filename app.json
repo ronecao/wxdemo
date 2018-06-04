@@ -1,8 +1,12 @@
 {
   "pages": [
-    "pages/wxml/wxml",
     "pages/index/index",
-    "pages/event/event"
+    "pages/event/event",
+    "pages/wxml/swiper",
+    "pages/wxml/movable/movableview",
+    "pages/component/component",
+    "pages/wxml/wxml",
+    "pages/demo/demo"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fff",
@@ -33,6 +37,12 @@
       {
         "text": "事件",
         "pagePath": "pages/event/event",
+        "iconPath": "assets/icons/event.png",
+        "selectedIconPath": "assets/icons/event-active.png"
+      },
+      {
+        "text": "组件",
+        "pagePath": "pages/component/component",
         "iconPath": "assets/icons/event.png",
         "selectedIconPath": "assets/icons/event-active.png"
       }

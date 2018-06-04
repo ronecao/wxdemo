@@ -1,57 +1,39 @@
-// pages/wxml/wxml.js
+// pages/demo/demo.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    currentView: 'blue',
-    nodes:[
+    markers:[
       {
-        name:'img',
-        attrs:{
-          class :'image',
-          src:'../../assets/images/demo-3.jpg'
+        id:0,
+        longitude:117.0311013,
+        latitude:36.662447,
+        iconPath:'../../assets/icons/pin.png',
+        width:22,
+        height:40,
+        callout:{
+          content:'黑虎泉',
+          fontSize:14,
+          color:'#000',
+          padding: 8,
+          bgColor: '#ffffff',
+          borderRadius:4,
+          boxShadow: '4px 8px 16px 0 rgba(0,0,0,0.18)',
+          display: "BYCLICK"  
+
         }
-      },
-      {
-        name: 'h3',
-        attrs:{
-          class:'header'
-        },
-        children:[
-          {
-            type: 'text',
-            text:'kkk'
-          }
-            
-
-        ]
       }
-
     ]
   
   },
-  setScrollView(event) {
-    this.setData({
-      currentView: event.target.dataset.view
-    })
-  },
-  gotoswiper(event) {
-    wx.navigateTo({
-      url: 'swiper',
-    })
-  },
-  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
-  },
-  tapHandler(event){
-    console.log(event)
+    console.log(options);
   },
 
   /**

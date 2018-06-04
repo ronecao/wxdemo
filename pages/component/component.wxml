@@ -1,0 +1,43 @@
+<view class="container vertical centered">
+  <view>
+    <form bindsubmit='formSubmit'>
+    <label for='slider' >
+      <text>slider</text>
+    </label>
+      <slider id='slider' name='slider' show-value></slider>
+      <input 
+        type='text'
+        name = 'text'
+        placeholder='input'
+        bindinput='inputHandler'
+      />
+      <textarea 
+        name = 'textarea'
+        placeholder='textarea'
+      />
+      <checkbox-group name='checkbox'>
+      <label wx:for="{{ countries }}" wx:key="item">
+        <text>{{ item.Name }}</text>
+        <checkbox value='{{ item.Value }}'></checkbox>
+      </label>
+      </checkbox-group>
+       <radio-group name='radio'>
+      <label wx:for="{{ countries }}" wx:key="item">
+        <text>{{ item.Name }}</text>
+        <radio value='{{ item.Value }}'></radio>
+      </label>
+      </radio-group>
+      <picker 
+        range='{{ opts }}'
+        bindchange='inputHandler'
+        name='picker'
+        mode='region'
+      >
+        <view>
+          <text> {{ opts[pick] }} </text>
+        </view>
+      </picker>
+      <button form-type='submit'>提交</button>
+    </form>
+  </view>
+</view>

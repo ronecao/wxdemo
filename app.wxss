@@ -1,3 +1,17 @@
+ map{
+   width: 100vw;
+   height: 100vh;
+ }
+form {
+  width:100vw;
+}
+input, textarea, picker {
+  padding:8px;
+  background: #ffffff;
+  margin: 8px;
+  border: 1px solid #dddddd;
+  width:auto;
+}
 .container {
   box-sizing: border-box;
   height: 80vh;

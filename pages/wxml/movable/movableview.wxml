@@ -1,0 +1,10 @@
+<movable-area>
+  <movable-view
+   inertia = '{{ true }}'
+   direction ='all'
+   x='30'
+   y='50'
+   out-of-bounds='{{ true }}'
+   >
+  </movable-view>
+</movable-area>

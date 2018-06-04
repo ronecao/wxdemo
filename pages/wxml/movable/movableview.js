@@ -1,57 +1,18 @@
-// pages/wxml/wxml.js
+// pages/wxml/movable/movableview.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    currentView: 'blue',
-    nodes:[
-      {
-        name:'img',
-        attrs:{
-          class :'image',
-          src:'../../assets/images/demo-3.jpg'
-        }
-      },
-      {
-        name: 'h3',
-        attrs:{
-          class:'header'
-        },
-        children:[
-          {
-            type: 'text',
-            text:'kkk'
-          }
-            
-
-        ]
-      }
-
-    ]
   
   },
-  setScrollView(event) {
-    this.setData({
-      currentView: event.target.dataset.view
-    })
-  },
-  gotoswiper(event) {
-    wx.navigateTo({
-      url: 'swiper',
-    })
-  },
-  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
   
-  },
-  tapHandler(event){
-    console.log(event)
   },
 
   /**

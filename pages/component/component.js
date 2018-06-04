@@ -1,57 +1,38 @@
-// pages/wxml/wxml.js
+// pages/component/component.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    currentView: 'blue',
-    nodes:[
+    countries:[
       {
-        name:'img',
-        attrs:{
-          class :'image',
-          src:'../../assets/images/demo-3.jpg'
-        }
+        'Name':'China',
+        'Value':'CN'
       },
       {
-        name: 'h3',
-        attrs:{
-          class:'header'
-        },
-        children:[
-          {
-            type: 'text',
-            text:'kkk'
-          }
-            
-
-        ]
-      }
-
-    ]
+        'Name': 'Thailand',
+        'Value': 'CH'
+      },
+      {
+        'Name': 'Japan',
+        'Value': 'JP'
+      },
+    ],
+    opts:[
+      '1',
+      '2',
+      '3'
+    ],
+    pick:0
   
   },
-  setScrollView(event) {
-    this.setData({
-      currentView: event.target.dataset.view
-    })
-  },
-  gotoswiper(event) {
-    wx.navigateTo({
-      url: 'swiper',
-    })
-  },
-  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
   
-  },
-  tapHandler(event){
-    console.log(event)
   },
 
   /**
@@ -60,7 +41,15 @@ Page({
   onReady: function () {
   
   },
-
+  formSubmit(event){
+    console.log(event.detail.value)
+  },
+  inputHandler(event){
+    console.log(event.detail.value)
+    this.setData({
+      pick: event.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

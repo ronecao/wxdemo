@@ -1,0 +1,12 @@
+/* pages/wxml/movable/movableview.wxss */
+movable-area{
+  width: 100vw;
+  height: 50vh;
+  background: #ededed;
+}
+
+movable-view {
+  width: 80px;
+  height: 80px;
+  background: #6435c9;
+}

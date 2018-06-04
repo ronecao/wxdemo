@@ -2,6 +2,12 @@
   <view bindtap="tapGreeting">
     <text class='header'> {{greeting}} </text>
   </view>
+  <navigator
+    open-type='navigate'
+    url='../demo/demo?demo=1'
+   >
+   demo
+  </navigator>
 </view>
 <view class="image">
   <image src="../../assets/images/landscape.png"></image>

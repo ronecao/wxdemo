@@ -1,0 +1,8 @@
+<!--pages/demo/demo.wxml-->
+<map
+  longitude='117.0311013'
+  latitude='36.662447'
+  scale='16'
+  markers='{{ markers }}'
+>
+</map>

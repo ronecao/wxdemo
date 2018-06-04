@@ -1,23 +1,32 @@
-<import src='../templates/header.wxml'/>
-<view class='container vertical centered'>
-  <view 
-   id="header"
-   class="header"
-   style = "color: #6354c9"
+<scroll-view>
+  <scroll-view
+    scroll-y="{{ true }}"
+    style='height: 100px'
+    scroll-into-view='{{ currentView }}'
+    scroll-with-animation= '{{ true }}'
   >
-    <text
-      data-title="views"
-      data-content="content"
-      hiden="{{ false }}"
-      bindtap='tapHandler'
-      id='views'
-      wx:if='{{ true }}'
-    >
-    views
-    </text>
-  </view>
-  <icon type ="info" color="#454575" size="40"/>
-</view>
-<view class="image">
-  <image src="../../assets/images/landscape.png"></image>
-</view>
+    <view class="view-container">
+      <view id="red" class="red" hover-class='lighten' >
+        <text>1</text>
+      </view>
+      <view id='yellow' class="yellow" hover-class='lighten'>
+        <text>2</text>
+      </view>
+      <view id='blue' class="blue" hover-class='lighten'>
+        <text>3</text>
+      </view>
+    </view>
+
+  </scroll-view>
+  <button bindtap='setScrollView' data-view='red'>red</button>
+  <button bindtap='setScrollView' data-view='blue'>blue</button>
+  <button bindtap='setScrollView' data-view='yellow'>yellow</button>
+  <rich-text
+    nodes='{{ nodes }}'
+  />
+
+  <text>******************************</text>
+  <button bindtap='gotoswiper' data-view='blue'>swiperdemo</button>
+  <progress percent="50" activeColor='#6435c9'/>
+</scroll-view>
+
