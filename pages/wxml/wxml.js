@@ -11,9 +11,15 @@ Page({
       show:true
     },
     fruits:[
-      'apple',
-      'banana',
-      'oragne'
+      { id: 1, fruit: "apple" },
+      { id: 2, fruit: "banana" }, 
+      { id: 3, fruit: "oriange" },
+    ],
+    input_data: [
+      { id: 1, unique: "unique1" },
+      { id: 2, unique: "unique2" },
+      { id: 3, unique: "unique3" },
+      { id: 4, unique: "unique4" },
     ]
   
   },

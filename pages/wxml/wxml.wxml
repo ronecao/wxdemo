@@ -6,8 +6,11 @@
   <view wx:else >
     <text class='{{ header.class }}'> branch </text>
   </view>
-  <view wx:for='{{ fruits }}' class="item" wx:for-item="fruit" >
-    {{ index }}: {{ fruit }}
+  <view wx:for='{{ input_data }}' wx:key="unique" >
+    {{ index }}: {{ input_data[index].unique }}
+  </view>
+   <view wx:for='{{ fruits }}' wx:for-item="fruit" ><!--old style wxfor-->
+    {{ index }}: {{ fruits[index].fruit }}
   </view>
 </view>
 <view class="image">
